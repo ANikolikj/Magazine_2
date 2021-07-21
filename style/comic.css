@@ -76,6 +76,9 @@ h1 {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media (max-width: 2560px) {
+    h1 {
+        font-size: 70px;
+    }
     .column {
       flex: 100%;
       max-width: 100%;
@@ -94,6 +97,9 @@ h1 {
     }
   }
   @media (max-width: 1440px) {
+    h1 {
+        font-size: 60px;
+    }
     .column {
       flex: 100%;
       max-width: 100%;
