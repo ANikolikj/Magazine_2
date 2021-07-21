@@ -75,39 +75,102 @@ h1 {
       
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
+  @media (max-width: 1440px) {
     .column {
       flex: 100%;
       max-width: 100%;
     }
     .shake{
-        top: 180px;
+        top: 600px;
         left: 58%;
-        width: 55px;
+        width: 70px;
+    }
+    .row {
+        width: 850px;
     }
     .comic-t {
-        max-width: 320px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+  }
+  @media (max-width: 1040px) {
+      h1 {
+          font-size: 50px;
+      }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .shake{
+        top: 550px;
+        left: 59%;
+        width: 70px;
+    }
+    .row {
+        width: 750px;
+    }
+    .comic-t {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .shake{
+        top: 300px;
+        left: 57%;
+        width: 55px;
+    }
+    .row {
+        width: 450px;
+    }
+    .comic-t {
+        max-width: 450px;
         margin: 0 auto;
     }
   }
 
   @media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
     .column {
       flex: 100%;
       max-width: 100%;
     }
+    .shake{
+        top: 300px;
+        left: 63%;
+        width: 55px;
+    }
+    .row {
+        width: 450px;
+    }
     .comic-t {
-        max-width: 320px;
+        max-width: 450px;
         margin: 0 auto;
     }
   }
 
 
   @media (max-width: 380px) {
+    h1 {
+        font-size: 20px;
+    }
     .shake{
         top: 180px;
         left: 60%;
         width: 55px;
+    }
+
+    .row {
+        max-width: 320px;
     }
     .comic-t {
         max-width: 320px;
@@ -120,6 +183,11 @@ h1 {
         top: 180px;
         left: 60%;
         width: 50px;
+    }
+
+    
+    .row {
+        max-width: 320px;
     }
     .comic-t {
         max-width: 320px;
