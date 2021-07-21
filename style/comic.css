@@ -75,6 +75,24 @@ h1 {
       
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 2560px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .shake{
+        top: 700px;
+        left: 58%;
+        width: 90px;
+    }
+    .row {
+        width: 980px;
+    }
+    .comic-t {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+  }
   @media (max-width: 1440px) {
     .column {
       flex: 100%;
