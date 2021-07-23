@@ -107,7 +107,7 @@ section h1:before {
 }
 
 section#cover .content span {
-	font-style: italic;
+	/* font-style: italic; */
 	letter-spacing: 1px;
 	font-size: 24px;
 	font-weight: 400;
@@ -126,6 +126,8 @@ section#cover .content figure {
 	height: 60%;
 	flex: 3;
 	position: relative;
+	/* z-index: 9; */
+	padding: 10px;
 }
 
 section#cover .content figure img {
@@ -296,18 +298,26 @@ ol > li {
 }
 
 ol > li::before {
-	content: counter(counter) ".";
+	content: counter(counter);
 	font-weight: 600;
 	font-size: 32px;
-	line-height: 1rem;
-	color: var(--color-accent);
+	line-height: 2.5rem;
+    background: var(--color-accent);
+	color: var(--color-bg);
 	font-family: "Grandstander", serif;
 	/*    border: 1px solid green;*/
-	min-width: 48px;
-	max-width: 48px;
+	/* min-width: 48px;
+	max-width: 48px; */
 	position: absolute;
 	margin-left: -64px;
-	text-align: right;
+	text-align: center;
+
+    /* line-height: 18px; */
+    
+    width: 32px; height: 32px;
+    
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 ol > li > ul {

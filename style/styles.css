@@ -36,6 +36,44 @@
     --pink: #EE4D93;
 }
 
+.bg-blue {
+    background-color: #0069AB;
+}
+
+.bg-lightblue {
+    background-color: #00B8F1;
+}
+
+.bg-tirquise {
+    background-color: #4EBEA4;
+}
+
+.bg-green {
+    background-color: #00AB6C;
+}
+
+.bg-lightgreen {
+    background-color: #A4CE4C;
+}
+
+.bg-yellow {
+    background-color: #FFDD2E;
+}
+
+.bg-orange {
+    background-color: #FBAF33;
+}
+
+.bg-red {
+    background-color: #EE404A;
+}
+
+.bg-purple {
+    background-color: #873F97;
+}
+.bg-pink {
+    background-color: #EE4D93;
+}
 .blue {
     color: #0069AB;
 }
