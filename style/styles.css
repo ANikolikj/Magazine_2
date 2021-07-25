@@ -126,7 +126,7 @@ body {
     height: 100vh; */
     font-family: 'MyFontMikado', sans-serif;
     margin: 0 auto;
-    background-image: linear-gradient(#FFF5D5, #fff);
+    /* background-image: linear-gradient(#FFF5D5, #fff); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
