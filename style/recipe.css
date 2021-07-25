@@ -18,8 +18,7 @@
 	--color-primary: #d2e2a0;
 }
 
-html,
-body {
+.primary-bg {
 	background: var(--color-primary);
     /* background-color: #d2e2a0; */
 	scroll-behavior: smooth;
@@ -29,7 +28,7 @@ a {
     font-family: MyFontBrush, 'sans-serif';
 }
 
-section, section#cover, section#recipe, section#cover span.side {
+section, section#recipe_cover, section#recipe, section#recipe_cover span.side {
     background: #f6f6f6;
     background-image: 
     linear-gradient(transparent 11px, rgb(220, 220, 200) 12px, transparent 12px),
@@ -47,7 +46,7 @@ section {
 	overflow: hidden;
 }
 
-section#cover span.side {
+section#recipe_cover span.side {
 	position: absolute;
 	height: 100%;
 	/* background: var(--color-bg); */
@@ -61,7 +60,7 @@ section#cover span.side {
 	font-family: "Grandstander", serif;
 }
 
-section#cover span.side h2 {
+section#recipe_cover span.side h2 {
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
 	transform: rotate(180deg);
@@ -71,13 +70,13 @@ section#cover span.side h2 {
 	letter-spacing: 1px;
 }
 
-section#cover span.side svg {
+section#recipe_cover span.side svg {
 	width: 32px;
 	height: 32px;
 	stroke: var(--color-primary);
 }
 
-section#cover .content {
+section#recipe_cover .content {
 	position: absolute;
 	width: calc(100% - 160px);
 	height: 100%;
@@ -106,7 +105,7 @@ section h1:before {
 	bottom: 0;
 }
 
-section#cover .content span {
+section#recipe_cover .content span {
 	/* font-style: italic; */
 	letter-spacing: 1px;
 	font-size: 24px;
@@ -116,12 +115,12 @@ section#cover .content span {
 	align-items: center;
 }
 
-section#cover .content span a {
+section#recipe_cover .content span a {
 	text-decoration: none;
 	color: var(--color-accent);
 }
 
-section#cover .content figure {
+section#recipe_cover .content figure {
 	width: 100%;
 	height: 60%;
 	flex: 3;
@@ -130,7 +129,7 @@ section#cover .content figure {
 	padding: 10px;
 }
 
-section#cover .content figure img {
+section#recipe_cover .content figure img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -158,8 +157,8 @@ section#recipe {
 	/* color: var(--color-primary); */
     color:rgba(0, 0, 0, 0.9);
 	font-family: "Grandstander", serif;
-	font-size: 18px;
-	line-height: 160%;
+	font-size: 16px; /*GOLEMINA BESHE 18*/
+	line-height: 150%; /*BESHE 160%*/
 }
 
 section#recipe .overview {
@@ -251,17 +250,17 @@ section#recipe .recipe-content .ingredients {
 	margin-bottom: 24px;
 }
 
-section#recipe .recipe-content .ing-list figure img {
+section#recipe .recipe-content .ing-list figure img, section figure img {
 	width: 100%;
 }
 
-section#recipe .recipe-content .ing-list figure {
+section#recipe .recipe-content .ing-list figure, section figure  {
 	width: 100%;
 	flex: 1;
 	position: relative;
 }
 
-section#recipe .recipe-content .ing-list figure img {
+section#recipe .recipe-content .ing-list figure img, , section figure img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -330,6 +329,32 @@ ol > li > ul > li {
 	margin-bottom: 8px;
 }
 
+ol > li span {
+	font-weight: 700;
+	color: var(--pink);
+}
+
+p.circle {
+  /* border-radius: 50%; */
+  background: var(--red);
+  color: #fff;
+  padding: 10px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 3px solid var(--red);
+}
+
+.circle > span {
+color: var(--yellow);
+}
+
+p.circle::before {
+	content: "!";
+	font-size: 100px;
+	color: var(--yellow);
+	opacity: 0.9;
+	animation: animate-transparency 2s ease infinite;
+  }
+
 .container {
 	display: block;
 	position: relative;
@@ -387,6 +412,12 @@ ol > li > ul > li {
 	color: var(--color-bg);
 }
 
+@keyframes animate-transparency {
+	0%   {color: var(--yellow);}
+	50%  {color: #ffffff00;}
+	100% {color: var(--yellow);}
+  }
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
@@ -401,7 +432,7 @@ ol > li > ul > li {
 		padding: 56px 40px;
 	}
 
-	section#cover .content {
+	section#recipe_cover .content {
 		width: calc(100% - 80px);
 	}
 
@@ -414,7 +445,7 @@ ol > li > ul > li {
 		padding: 0 0 56px 0;
 	}
 
-	section#cover .content span {
+	section#recipe_cover .content span {
 		font-size: 22px;
 		padding: 0 32px;
 	}

@@ -44,7 +44,7 @@
     background-color: #00B8F1;
 }
 
-.bg-tirquise {
+.bg-turquoise {
     background-color: #4EBEA4;
 }
 
@@ -82,7 +82,7 @@
     color: #00B8F1;
 }
 
-.tirquise {
+.turquoise {
     color: #4EBEA4;
 }
 
@@ -282,15 +282,35 @@ section {
 }
 
 .border-pink {
-    border: 5px solid #EE4D93;
+    border: 5px solid var(--pink);
+}
+
+.border-light-pink {
+    border: 5px solid #f87cb2;
+}
+
+.border-purple {
+    border: 5px solid var(--purple);
 }
 
 .border-orange {
     border: 5px solid #FBAF33;
 }
 
+.border-white {
+    border: 5px solid #fff;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 .border-img {
     border-radius: 10px;
+}
+
+.border-round {
+    border-radius: 50%;
 }
 
 .one {
@@ -322,6 +342,17 @@ section {
 .qatext {
     font-size: 0.7rem;
 }
+
+@keyframes shake-animation {
+    0% { transform:translate(0,0) }
+    1.78571% { transform:translate(3px,0); transform:rotate(2deg) }
+    3.57143% { transform:translate(0,0); transform:rotate(1deg) }
+    5.35714% { transform:translate(3px,0); transform:rotate(2deg) }
+    7.14286% { transform:translate(0,0); transform:rotate(1deg) }
+    8.92857% { transform:translate(3px,0); transform:rotate(2deg) }
+    10.71429% { transform:translate(0,0); transform:rotate(1deg) }
+    100% { transform:translate(0,0); transform:rotate(0deg) }
+    }
 
 @-webkit-keyframes pulse {
     0% {
