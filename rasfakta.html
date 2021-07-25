@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Chewy&family=Finger+Paint&family=Freckle+Face&family=Grandstander:wght@100;200;300;400;500;600;700;800;900&family=Knewave&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&family=Mountains+of+Christmas:wght@400;700&family=Nixie+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Pompiere&family=Raleway+Dots&family=Sniglet:wght@400;800&family=Special+Elite&family=Titan+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Chewy&family=Finger+Paint&family=Freckle+Face&family=Grandstander:wght@100;200;300;400;500;600;700;800;900&family=Knewave&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&family=Mountains+of+Christmas:wght@400;700&family=Nixie+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Pompiere&family=Raleway+Dots&family=Sniglet:wght@400;800&family=Special+Elite&family=Titan+One&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Rasfakta: welshponny</title>
 </head>
 
@@ -38,9 +37,7 @@
 
     <section id="rasfakta-content">
         <div>
-            <p>Från: Storbritannien</p>
-            </div>
-            <div>
+            <p><span>Från: </span>Storbritannien</p>
 <p>                <span>Ursprung: </span>Rasen har sitt ursprung i Wales där
                 man korsat welshponnyer från sektion A (welsh
                 mountain) och (welshponny av cobtyp). En mindre +
@@ -48,12 +45,11 @@
                 I rasen finns också inslag av arabiskt fullblod vilket
                 syns bland annat på den något inåtböjda nosryggen
                 hos welshponnyn. Även rasen hackney finns i rasen.</p>
-        </div>
+
         <figure>
             <img class="border-white border-img one shadow l-img" src="imgs/PF2202_16-17_Getty_cob-1.jpg" alt="">
             <figcaption>WELSHPONNY AV COBTYP</figcaption>
         </figure>
-        <div>
             <p><span>Användning: </span>Av de fem olika welshraserna som
                 finns är welshponnyn den näst minsta och tillhör
                 alltså sektion B. Tack vare att den är säker på foten,
@@ -61,26 +57,31 @@
                 på att hoppa, men gör minst lika bra ifrån sig på
                 dressyrbanan.
             </p>
+            <figure>
+                <img class="border-white border-img two shadow l-img" src="imgs/PF2202_16-17_Getty_mountain-1.jpg" alt="">
+                <figcaption>WELSH MOUNTAIN</figcaption>
+            </figure>
             <p>
                 <span>Så ser welshponnyn ut: </span>Alla färger är tillåtna och
                 även en viss mängd hovskägg. Ponnyn har stora
                 mörka ögon men som ibland även kan vara blå.
             </p>
+            <figure>
+                <img class="border-white border-img two shadow xl-img" src="imgs/PF2202_16-17_Getty_dragare-1.jpg" alt="">
+            </figure>
             <p>
                 <span>Temperament: </span>Welshponnyn är en ponny som vill
                 framåt och är mycket stark och tålig. Det här är en
                 ras med mycket ponnykaraktär!</p>
         </div>
-        <figure>
-            <img class="border-white border-img two shadow l-img" src="imgs/PF2202_16-17_Getty_mountain-1.jpg" alt="">
-            <figcaption>WELSH MOUNTAIN</figcaption>
-        </figure>
-        <div>
+
+        
+        <!-- <div>
             <p>
                 Det finns både welsh mountain och welshponny av cobtyp i welshponnyn.
             </p>
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
             <p>Det här är min kompis
                 Gizmo. Han är en
                 welshponnyhingst
@@ -91,10 +92,31 @@
                 ta sig igenom banan
                 snabbt tack vare sitt
                 temperament.</p>
+        </div> -->
+        
+        <div class="penny-pres">
+            <div class="button_bubble">
+                <div style="display: inline-block">
+                    <div id="bubblePres" class="bubblepres" style='opacity: 0;'>
+                        <p>Det här är min kompis
+                            Gizmo. Han är en
+                            welshponnyhingst
+                            som älskar att hoppa!
+                            Omhoppning är hans
+                            specialitet då han är
+                            riktigt pigg och kan
+                            ta sig igenom banan
+                            snabbt tack vare sitt
+                            temperament.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pennypres2">
+                <button id="btnPres" class="buttonpres" type='button' onclick="toggleTextPres()"></button>
+                <img src="imgs/PennyPresenterar01.png" alt="PennyPresenterar01">
+            </div>
         </div>
-        <figure>
-            <img class="border-white border-img two shadow xl-img" src="imgs/PF2202_16-17_Getty_dragare-1.jpg" alt="">
-        </figure>
     </section>
 </body>
 
