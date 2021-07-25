@@ -390,6 +390,7 @@ section {
       color: white;
       text-align: center;
       padding: 3px;
+      margin-bottom: 15px;
   }
 
 @keyframes shake-animation {

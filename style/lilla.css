@@ -511,6 +511,16 @@ p.circle::before {
 	color: var(--red);
 }
 
+ul li {
+	list-style-type: none;
+}
+
+ul li .material-icons-round {
+	color: var(--red);
+	font-size: 16px;
+	padding-right: 4px;
+	margin-left: -8px;
+}
 
 @keyframes animate-transparency {
 	0%   {color: var(--yellow);}
