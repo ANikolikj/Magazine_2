@@ -118,6 +118,9 @@
 .pink {
     color: #EE4D93;
 }
+.white{
+    color: #fff;
+}
 
 /* STYLES */
 
@@ -274,6 +277,9 @@ section {
 
 /* IMAGES */
 
+.s-img {
+    max-width: 70px;
+}
 .l-img {
     max-width: 250px;
     margin: 10px auto;
@@ -359,6 +365,17 @@ section {
 
 /* BLOCKS */
 
+.white-block {
+	background-color: white;
+	border-radius: 10px;
+	padding:20px;
+	margin-bottom: 25px;
+}
+.white-block p {
+    padding: 15px 0;
+}
+
+
 .pink-block {
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 25px;
@@ -391,6 +408,40 @@ section {
       text-align: center;
       padding: 3px;
       margin-bottom: 15px;
+  }
+
+  .tape {
+    background-color: hsla(0,0%,100%,.4);
+    box-shadow: inset 0 0 3px 5px hsla(0,0%,100%,.1);
+    height: 15px;
+    zoom:1.5;
+     z-index: 10;
+    margin-left: 20px;
+    position: absolute;
+    transform: rotate(-25deg);
+    width: 40px;
+    -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
+  }
+  .tape:after,
+  .tape:before {
+    background-size: .4em .4em;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: .2em;
+  }
+  .tape:after {
+    background-image: linear-gradient(45deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-45deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 0 100%;
+    left: -.2em;
+  }
+  .tape:before {
+    background-image: linear-gradient(135deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-135deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 100% 100%;
+    right: -.2em;
   }
 
 @keyframes shake-animation {
