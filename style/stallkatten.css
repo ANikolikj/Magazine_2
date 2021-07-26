@@ -18,6 +18,10 @@
 	--color-primary: #d2e2a0;
 }
 
+body {
+	background-image: linear-gradient(rgb(255, 249, 174), rgb(151, 211, 186));
+}
+
 .primary-bg {
 	background: var(--color-primary);
     /* background-color: #d2e2a0; */
@@ -29,7 +33,7 @@ a {
 }
 
 section, section#recipe_cover, section#recipe, section#recipe_cover span.side {
-    background: #f6f6f6;
+    background: #f6f6f6b3;
     background-image: 
     linear-gradient(transparent 11px, rgb(220, 220, 200) 12px, transparent 12px),
     linear-gradient(90deg, transparent 11px, rgb(220, 220, 200) 12px, transparent 12px);
@@ -40,25 +44,15 @@ section {
 	/* background: var(--color-bg); */
 	width: calc(100% - 80px);
 	height: calc(100% - 80px);
-	min-height: calc(100vh - 80px);
+	min-height: calc(100vh - 180px);
 	position: relative;
 	margin: 40px auto;
 	overflow: hidden;
 }
 
-section#recipe_cover span.side {
-	position: absolute;
-	height: 100%;
-	/* background: var(--color-bg); */
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	padding: 48px 24px;
-	border-right: 1px solid var(--color-primary);
-	z-index: 100;
-	font-family: "Grandstander", serif;
-}
+/* #stallkatten h1 {
+	font-size: larger;
+} */
 
 section#recipe_cover span.side h2 {
 	writing-mode: vertical-rl;
@@ -87,7 +81,7 @@ section#recipe_cover .content {
 
 section h1 {
 	font-family: 'MyFontSunday', sans-serif;
-	font-size: 56px;
+	font-size: x-large;
 	line-height: 110%;
 	align-items: center;
 	flex: 3;
@@ -99,10 +93,10 @@ section h1 {
 section h1:before {
 	position: absolute;
 	content: "";
-	width: 80px;
+	width: 120px;
 	height: 6px;
-	background: var(--color-primary);
-	bottom: 0;
+	background: var(--purple);
+	bottom: -15px;
 }
 
 section#recipe_cover .content span {
@@ -456,6 +450,22 @@ p.circle::before {
 	margin-bottom: 10px;
 }
 
+#cover p, #stallkatten p {
+	padding: 10px 0;
+}
+.sign-off {
+	font-family: MyFontSean, sans-serif;
+	margin-top: 25px;
+}
+
+#cover .sign-off{
+	color: var(--red);
+}
+
+#stallkatten .sign-off {
+	color: var(--green);
+}
+
 @keyframes animate-transparency {
 	0%   {color: var(--yellow);}
 	50%  {color: #ffffff00;}
@@ -468,8 +478,9 @@ p.circle::before {
 	section {
 		width: calc(100% - 48px);
 		height: calc(100% - 48px);
-		min-height: calc(100vh - 48px);
+		min-height: calc(100vh - 280px);
 		margin: 24px auto;
+		padding: 25px;
 	}
 
 	section#recipe {
@@ -481,8 +492,9 @@ p.circle::before {
 	}
 
 	section h1 {
-		font-size: 40px;
-		padding: 0 32px;
+		font-size: 24px;
+		padding: 0 0 0 10px;
+		margin-bottom: 25px;
 	}
 
 	section#recipe h1 {
