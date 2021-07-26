@@ -33,10 +33,11 @@ a {
 }
 
 section, section#recipe_cover, section#recipe, section#recipe_cover span.side {
-    background: #f6f6f6b3;
-    background-image: 
+    background: #f6f6f6ee;
+		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    /* background-image: 
     linear-gradient(transparent 11px, rgb(220, 220, 200) 12px, transparent 12px),
-    linear-gradient(90deg, transparent 11px, rgb(220, 220, 200) 12px, transparent 12px);
+    linear-gradient(90deg, transparent 11px, rgb(220, 220, 200) 12px, transparent 12px); */
     background-size: 100% 12px, 12px 100%;
 }
 
@@ -493,7 +494,7 @@ p.circle::before {
 
 	section h1 {
 		font-size: 24px;
-		padding: 0 0 0 10px;
+		padding: 20px 0 0 10px;
 		margin-bottom: 25px;
 	}
 
