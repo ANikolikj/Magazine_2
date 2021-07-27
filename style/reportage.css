@@ -274,7 +274,7 @@ section#recipe .recipe-content .ing-list figure, section figure  {
 	position: relative;
 }
 
-section#recipe .recipe-content .ing-list figure img, , section figure img {
+section#recipe .recipe-content .ing-list figure img, section figure img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
