@@ -540,9 +540,9 @@ p.circle::before {
     right: -.2em;
   }
 
-  .sm-img {
+  /* .sm-img {
 	  max-width: 70px;
-  }
+  } */
 
 @keyframes animate-transparency {
 	0%   {color: var(--yellow);}
