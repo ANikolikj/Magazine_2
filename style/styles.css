@@ -275,11 +275,27 @@ section {
     margin: auto;
 }
 
+/* QUOTE */
+
+.red-quote {
+    font-family: Chewy, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    color: var(--red);
+    padding: 15px 5px;
+    margin-bottom: 25px;
+}
+
 /* IMAGES */
 
 .s-img {
     max-width: 70px;
 }
+
+.m-img {
+    max-width: 180px;
+}
+
 .l-img {
     max-width: 250px;
     margin: 10px auto;
@@ -375,6 +391,22 @@ section {
     padding: 15px 0;
 }
 
+.turquoise-block {
+    background-color: var(--turquoise);
+    transform: rotate(2deg);
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.turquoise-block h3 {
+    color: var(--blue);
+    font-family: Grandstander, sans-serif;
+    font-weight: bold;
+}
+
+.turquoise-block p {
+    padding: 15px 0;
+}
 
 .pink-block {
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
