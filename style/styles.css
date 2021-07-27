@@ -384,7 +384,7 @@ section {
 }
 
 .simple-text p {
-    padding: 5px;
+    padding: 5px 0;
 }
 .simple-text h3 {
     color: var(--pink);
