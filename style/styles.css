@@ -442,6 +442,18 @@ section {
       margin-bottom: 15px;
   }
 
+  .tape-one {
+    transform: rotate(-20deg);
+  }
+
+  .tape-two {
+    transform: rotate(10deg);
+  }
+
+  .tape-three {
+    transform: rotate(-15deg);
+  }
+
   .tape {
     background-color: hsla(0,0%,100%,.4);
     box-shadow: inset 0 0 3px 5px hsla(0,0%,100%,.1);
