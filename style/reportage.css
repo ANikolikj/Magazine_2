@@ -119,7 +119,7 @@ section h1:before {
 	bottom: -10px;
 }
 
-section#recipe_cover .content span {
+section#cover .content span {
 	/* font-style: italic; */
 	letter-spacing: 1px;
 	font-size: 24px;
@@ -274,12 +274,12 @@ section#recipe .recipe-content .ing-list figure, section figure  {
 	position: relative;
 }
 
-section#recipe .recipe-content .ing-list figure img, section figure img {
+/* section#recipe .recipe-content .ing-list figure img, section figure img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 	display: block;
-}
+} */
 
 p.variation {
 	font-size: 16px;
@@ -578,7 +578,7 @@ p.circle::before {
 		padding: 0 0 56px 0;
 	}
 
-	section#recipe_cover .content span {
+	section#cover .content span {
 		font-size: 22px;
 		padding: 0 32px;
 	}
