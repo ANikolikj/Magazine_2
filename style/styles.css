@@ -379,6 +379,23 @@ section {
     font-size: 0.7rem;
 }
 
+.simple-text {
+    margin: 10px auto 30px auto;
+}
+
+.simple-text p {
+    padding: 5px;
+}
+.simple-text h3 {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.simple-text span{
+    font-weight: bold;
+    font-style: oblique;
+}
+
 /* BLOCKS */
 
 .white-block {
