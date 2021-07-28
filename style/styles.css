@@ -623,3 +623,9 @@ padding: 15px 0;
         font-size: 15px;
     }
 } */
+
+@media only screen and (max-width:425px) {
+    section {
+        max-width: 200x;
+    }
+}

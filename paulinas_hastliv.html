@@ -14,11 +14,124 @@
         href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Chewy&family=Finger+Paint&family=Freckle+Face&family=Grandstander:wght@100;200;300;400;500;600;700;800;900&family=Knewave&family=Love+Ya+Like+A+Sister&family=Luckiest+Guy&family=Mountains+of+Christmas:wght@400;700&family=Nixie+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Pompiere&family=Raleway+Dots&family=Sniglet:wght@400;800&family=Special+Elite&family=Titan+One&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="app.js"></script>
 
     <title>Paulinas Hastliv</title>
+    <style>
+        .overlay {
+        height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+        }
+
+        .overlay-content {
+        position: relative;
+    top: 15%;
+    width: 32%;
+    /* text-align: center; */
+    margin-top: 30px;
+        }
+
+        .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        /* font-size: 36px; */
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+        ol {
+            list-style: none;
+    counter-reset: counter;
+    /* margin: 0 auto; */
+    padding: 0;
+    margin-left: 100px;
+    display: inline-block;
+        }
+        ol > li {
+        counter-increment: counter;
+    margin-bottom: 16px;
+    width: 100%;
+    position: relative;
+        }
+
+        ol > li::before {
+    content: counter(counter);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 2.5rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-family: "Grandstander", serif;
+    /* border: 1px solid green; */
+    position: absolute;
+    margin-left: -34px;
+    /* margin-top: 10px; */
+    text-align: center;
+    /* line-height: 18px; */
+    width: 32px;
+    height: 32px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.burger {
+    font-size:20px;
+    cursor:pointer; 
+    color: white;
+    padding: 5px 10px;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+        @media screen and (max-height: 450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+            }
+        }
+    </style>
 </head>
 
 <body id="paulinas">
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <ol role="list">
+                <li><a href="hey_stallkatten.html">Hey Stalkatten</a></li>
+                <li><a href="mini_comic.html">Penny&Stallkatten</a></li>
+                <li><a href="rasfakta.html">Rasfakta</a></li>
+                <li><a href="lilla_ridskallen.html">Lilla Ridskallen</a></li>
+                <li><a href="reportage.html">Reportage: DJURKLINIKEN</a></li>
+                <li><a href="paulinas_hastliv.html">Paulinas Hastliv: Ponnykarleken</a></li>
+                <li><a href="todos_los_caballos_del_mundo.html">Todos Los Caballos del Mundo</a></li>
+                <li><a href="flamingo.html">Flamingo</a></li>
+                <li><a href="recipe.html">Recipe: Popcorn</a></li>
+            </ol>
+        </div>
+      </div>
+    <span class="burger" onclick="openNav()">&#9776;</span>
+
     <!-- <section id="recipe_cover">
 
         <div class="content">
