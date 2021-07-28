@@ -14,3 +14,14 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navBurger").style.top = "0";
+  } else {
+    document.getElementById("navBurger").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
