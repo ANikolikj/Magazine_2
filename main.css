@@ -28,6 +28,10 @@ body {
 	height: 33vh;
 	object-fit: cover;
 }
+
+.quiz ul img {
+	width: 200px;
+}
 .quiz div > span {
 	font-size: 80%;
 	text-transform: uppercase;

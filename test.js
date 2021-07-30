@@ -1,13 +1,13 @@
 var __QUIZ = {
     'campaign': '?utm_source=schluetersche.de&utm_medium=charakter-quiz&utm_campaign=onlinemarketing-persönlichkeit',
 	'intro' : {
-		'title' : 'Welcher Onlinemarketing-Typ sind Sie?',
-		'text' : 'Finden Sie heraus, was Sie antreibt und was Sie besonders macht!',
+		'title' : 'Hur ponnybusig är du?',
+		'text' : 'Dags att ta reda på om du hade varit den busigaste ponnyn i stallet!',
 		// 'image' : 'https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
     },
     'questionnaire': {
         'currentQuestion': 0,
-        'numberOfQuestions': 4,
+        'numberOfQuestions': 7,
         'questions': {
             '1': {
                 'question': 'Vad är det roligaste pranket du vet?',
@@ -28,7 +28,7 @@ var __QUIZ = {
                 }
             },
             '2': {
-                'question': 'Mit welcher Maßnahme wollen Sie Ihre Erfolgsbasis sichern?',
+                'question': 'Hur tror du att rideleverna i stallet hade pratat om dig om du var en ponny?',
                 // 'image': 'https://images.unsplash.com/photo-1488903809927-48c9b4e43700?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=697&q=80',
                 'choices': {
                     '1': {
@@ -80,6 +80,60 @@ var __QUIZ = {
                         'score': [0, 0, 1]
                     }
                 }
+            },
+            '5': {
+                'question': 'Dags för hoppning. Vilken ponny hade du varit?',
+                // 'image': 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+                'choices': {
+                    '1': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_fall.jpg" alt="image a">',
+                        'score': [1, 0, 0]
+                    },
+                    '2': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_jump.jpg" alt="image b">',
+                        'score': [0, 1, 0]
+                    },
+                    '3': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_run.jpg" alt="image c">',
+                        'score': [0, 0, 1]
+                    }
+                }
+            },
+            '6': {
+                'question': 'Vilka ponnyer i stallet tycker du oftast bäst om?',
+                // 'image': 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+                'choices': {
+                    '1': {
+                        'text': 'De snälla, lugna och mysiga ponnyerna.',
+                        'score': [1, 0, 0]
+                    },
+                    '2': {
+                        'text': 'Jag älskar fart och ponnyer som alltid överraskar på ett eller annat sätt.',
+                        'score': [0, 1, 0]
+                    },
+                    '3': {
+                        'text': 'Jag gillar ponnyer som är en utmaning och jag dras ofta till de hästar som andra är lite rädd för att rida.',
+                        'score': [0, 0, 1]
+                    }
+                }
+            },
+            '7': {
+                'question': 'Vilken bild är mest ”du”?',
+                // 'image': 'https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+                'choices': {
+                    '1': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_yay.jpg" alt="image a">',
+                        'score': [1, 0, 0]
+                    },
+                    '2': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_beta.jpg" alt="image b">',
+                        'score': [0, 1, 0]
+                    },
+                    '3': {
+                        'text': '<img id="quiz_image" src="imgs/PF2201-14-15_Getty_friends.jpg" alt="image c">',
+                        'score': [0, 0, 1]
+                    }
+                }
             }
         }
     },
@@ -89,18 +143,18 @@ var __QUIZ = {
         'finalScore': [0, 0, 0],
         'types': {
             '1': {
-                'name': 'A',
-                'text': 'Sie wollen den Umsatz Ihres Unternehmens steigern. Dabei setzen Sie auf Bestandskunden, aber auch auf Neukunden. Sie wollen Kontaktanlässe schaffen, um bestehenden oder potentiellen Kunden Ihr Angebot zu präsentieren.',
+                'name': 'FLest A - läromästarponnyn!',
+                'text': 'Du är precis som ponnyerna du älskar att rida och alltså en äkta läromästare! Du har ett lugnt temperament och ställer sällan till bus. Du t ycker det är mycket roligare att bli utsatt för et t riktigt bra bus, än at t skoja med andra.',
                 'href': 'types/der_umsatzorientierte.html'
             },
             '2': {
-                'name': 'B',
-                'text': 'Kundenzufriedenheit ist Ihnen wichtig. Sie wollen die Interessen der Kunden genau kennen, verstehen und die Zufriedenheit messen. In ihrem Auftreten setzen Sie auf Vertrauen und Zuverlässigkeit.',
+                'name': 'Flest B - en mixponny!',
+                'text': 'Du är en riktig luring! Dig vet man liksom inte riktigt var man har. Ena dagen är du hur chill som helst för att dagen efter vakna upp på värsta bästa bushumöret. Du är med andra ord en härlig mix av läromästarponnyn och den busiga shettisen.',
                 'href': 'types/der_kundenorientierte.html'
             },
             '3': {
-                'name': 'C',
-                'text': 'Sie wissen, wie der Markt funktioniert. Sie wollen über Trends und Entwicklungen informiert sein und haben Ihre Konkurrenten stets im Blick. Online ist Ihre Stärke.',
+                'name': 'Flest C – busiga shettisen!',
+                'text': 'Du är ett riktigt busfrö precis som shettisar ofta kan vara. Hade du varit en ponny hade du garanterat smitit från hagen typ dagligen, brutit dig in i foderkammaren och haft en tradition att bocka åtminstone en gång under ridturen!',
                 'href': 'types/der_online-verkaeufer.html'
             }
         }
@@ -146,7 +200,7 @@ function QUIZShowChoices() {
 		QUIZElement('quiz_text').innerText = '';
 		// QUIZElement('quiz_image').src = __QUIZ.questionnaire.questions[question].image;
 		QUIZElement('quiz_question').innerText = __QUIZ.questionnaire.questions[question].question;
-		QUIZElement('quiz_progress').innerText = 'Frage ' + __QUIZ.questionnaire.currentQuestion + ' von ' + __QUIZ.questionnaire.numberOfQuestions;
+		QUIZElement('quiz_progress').innerText = 'Vraag ' + __QUIZ.questionnaire.currentQuestion + ' van ' + __QUIZ.questionnaire.numberOfQuestions;
 
 		do {
 			choices += '<li><label><input type="radio" name="block" onclick="QUIZDoSomething(' + question + ', ' + choice + ')"><span>' + __QUIZ.questionnaire.questions[question].choices[choice].text + '</span></label></li>';
@@ -156,17 +210,17 @@ function QUIZShowChoices() {
 			QUIZElement('quiz_choices').innerHTML = choices;
 
 		if(question < __QUIZ.questionnaire.numberOfQuestions) {
-			QUIZElement('quiz_next').innerText = 'Weiter';
+			QUIZElement('quiz_next').innerText = 'Next';
 		}
 		else {
-			QUIZElement('quiz_next').innerText = 'Zum Ergebnis';
+			QUIZElement('quiz_next').innerText = 'Submit';
 		}
 	}
 	else {
 		// QUIZElement('quiz_image').src = __QUIZ.intro.image;
 		QUIZElement('quiz_question').innerText = __QUIZ.intro.title;
 		QUIZElement('quiz_text').innerText = __QUIZ.intro.text;
-		QUIZElement('quiz_next').innerText = 'Los geht\'s!';
+		QUIZElement('quiz_next').innerText = 'Let\'s go!';
 	}
 }
 
