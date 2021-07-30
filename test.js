@@ -210,17 +210,17 @@ function QUIZShowChoices() {
 			QUIZElement('quiz_choices').innerHTML = choices;
 
 		if(question < __QUIZ.questionnaire.numberOfQuestions) {
-			QUIZElement('quiz_next').innerText = 'Next';
+			QUIZElement('quiz_next').innerText = 'Nasta';
 		}
 		else {
-			QUIZElement('quiz_next').innerText = 'Submit';
+			QUIZElement('quiz_next').innerText = 'Skicka in';
 		}
 	}
 	else {
 		// QUIZElement('quiz_image').src = __QUIZ.intro.image;
 		QUIZElement('quiz_question').innerText = __QUIZ.intro.title;
 		QUIZElement('quiz_text').innerText = __QUIZ.intro.text;
-		QUIZElement('quiz_next').innerText = 'Let\'s go!';
+		QUIZElement('quiz_next').innerText = 'Start!';
 	}
 }
 

@@ -38,8 +38,8 @@ body {
 	top: -10px;
 	left: -10px;
 	border-radius: 15px;
-	border: 2px dashed #fff;
-	background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px, rgba(255,255,255,.5) 0, rgba(255,255,255,.5) 5px);
+	border: 2px dashed #FFF5CA;
+	background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px, #fff5caf1 0, #fff5caf1 5px);
 	z-index: -1;
 	box-sizing: border-box;
 	width: 100%;
