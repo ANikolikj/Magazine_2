@@ -1,7 +1,7 @@
 var __QUIZ = {
     'campaign': '?utm_source=schluetersche.de&utm_medium=charakter-quiz&utm_campaign=onlinemarketing-persönlichkeit',
 	'intro' : {
-		'title' : 'Hur ponnybusig är du?',
+		'title' : '',
 		'text' : 'Dags att ta reda på om du hade varit den busigaste ponnyn i stallet!',
 		// 'image' : 'https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
     },
