@@ -178,8 +178,9 @@ function QUIZNext() {
 	if(__QUIZ.questionnaire.currentQuestion === __QUIZ.questionnaire.numberOfQuestions) {
 		var characterType = __QUIZ.results.finalScore.indexOf(Math.max(...__QUIZ.results.finalScore)) + 1;
 		//window.location.href = __QUIZ.results.types[characterType].href + __QUIZ.campaign;
-		var resultHTML = '<h3>' + __QUIZ.results.types[characterType].name + '</h3>' + '<p>' + __QUIZ.results.types[characterType].text + '</p>';
+		var resultHTML = '<div class="result"><h3>Mitt resultat</h3><h2>' + __QUIZ.results.types[characterType].name + '</h2>' + '<p>' + __QUIZ.results.types[characterType].text + '</p></div>';
 		QUIZElement('quiz_result').innerHTML = resultHTML;
+        QUIZElement('quiz_section').remove();
 	}
 	else {
 		for(var i = 0; i < __QUIZ.results.questionScore.length; i++) {
