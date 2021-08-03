@@ -1,0 +1,199 @@
+body {
+	font-size: 105%;
+	line-height: 150%;
+	font-family: 'Open Sans', sans-serif;
+	color: #424242;
+	/* background-color: #4CBAA1; */
+	background-color: #ffffff;
+	background-image: url(../imgs/wood-pattern.png);
+	background-repeat: repeat !important;
+	background-size: auto !important;
+}
+
+.title {
+	max-width: 300px;
+	padding: .5em 1em 1em 1em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title h1 {
+	font-family: MyFontMikadoBold, sans-serif;
+	color: var(--yellow);
+	text-shadow: 1px 1px var(--green) ;
+	font-size: 38px;
+	line-height: 120%;
+}
+
+.quiz {
+	position: relative;
+	display: block;
+	max-width: 300px;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 .1em 1em hsla(0, 0%, 0%, .2);
+	border-radius: 15px;;
+}
+
+.quiz:before/*, .result:before*/ {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	border-radius: 15px;
+	border: 2px dashed #FFF5CA;
+	background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px, #fff5caf1 0, #fff5caf1 5px);
+	z-index: -1;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+.result {
+	position: relative;
+	display: block;
+	max-width: 300px;
+	padding: 0;
+	margin: 0 auto;
+	/* background-color: #ffffff; */
+	/* box-shadow: 0 .1em 1em hsla(0, 0%, 0%, .2); */
+	/* border-radius: 15px;; */
+	background-image: url(../imgs/spiral-bound-page.svg);
+	background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px !important;
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+	-webkit-filter: drop-shadow( 1px 3px 5px rgba(0, 0, 0, .5));
+  filter: drop-shadow( 1px 3px 5px rgba(0, 0, 0, .5));
+}
+
+.result:before {
+	transform: rotate(2deg);
+}
+
+.quiz div, .result {
+	padding: .5em 1em 1em 1em;
+}
+
+.result h3 {
+	color: var(--pink);
+	font-family: MyFontSean, sans-serif;
+	/* font-family: MyFontMikadoBold, sans-serif; */
+	/* text-shadow: 1px 1px var(--yellow) ; */
+}
+
+.result h1 {
+	margin-top: 70px;
+	font-family: Chewy, sans-serif;
+	color: var(--turquoise);
+	font-size: 2.5rem;
+	transform: rotate(-2deg);
+	/* text-shadow: 1px 1px var(--lightpink) ; */
+}
+
+.result p:nth-child(1) {
+	transform: rotate(1deg);
+}
+
+.result p:nth-child(2) {
+	transform: rotate(-1deg);
+}
+
+.result p:nth-child(3) {
+	transform: rotate(2deg);
+}
+
+.result p:nth-child(4) {
+	transform: rotate(1deg);
+}
+
+.result h2 {
+	padding-bottom: 50px;
+}
+
+.quiz picture {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.quiz picture img {
+	width: 100%;
+	height: 33vh;
+	object-fit: cover;
+}
+
+.quiz ul img {
+	width: 200px;
+	border-radius: 15px;
+}
+
+.quiz ul li:nth-child(1) img {
+	border: 4px solid var(--pink);
+	transform: rotate(2deg);
+}
+
+.quiz ul li:nth-child(2) img {
+	border: 4px solid var(--orange);
+	transform: rotate(-1deg);
+}
+
+.quiz ul li:nth-child(3) img {
+	border: 4px solid var(--lightgreen);
+	transform: rotate(1deg);
+}
+
+.quiz div > span {
+	font-size: 80%;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 70%, 1);
+}
+.quiz h2 {
+	font-size: 120%;
+	font-weight: 700;
+	margin: 0;
+}
+.quiz ul {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 0 0;
+}
+.quiz input[type='radio'] {
+	display: none;
+}
+.quiz label span {
+	display: block;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bdbdbd;
+	padding: .6em;
+	margin: 0;
+	text-align: left;
+	font-size: inherit;
+	background-color: transparent;
+	cursor: pointer;
+	user-select: none;
+	transition: .5s background-color ease-out;
+}
+.quiz label input:checked + span {
+	background-color: hsla(112, 45%, 47%, .2);
+}
+.quiz button {
+	display: block;
+	background-color: #ffffff;
+	outline: none;
+	border: 1px solid hsla(112, 45%, 47%, 1);
+	border-radius: .2em;
+	font-size: inherit;
+	line-height: 200%;
+	padding: 0 1em;
+	margin: 1em auto 0 auto;
+	cursor: pointer;
+	transition: .5s border-color ease-out, .5s opacity ease-out;
+}
+.quiz button:disabled {
+	opacity: .2;
+	border-color: hsla(0, 0%, 47%, 1);
+	transition: .1s border-color, .1s opacity;
+}
